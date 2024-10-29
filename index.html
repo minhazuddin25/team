@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Employee Profiles Gradient</title>
+<style>
+* {
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+    box-sizing: border-box; /* Include padding and border in element's total width and height */
+}
+
+body {
+    background: rgb(30, 30, 30); /* Dark background color */
+    color: white; /* White text color for readability */
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif/* Set font family */
+}
+
+section {
+    display: flex; /* Use Flexbox for layout */
+    flex-wrap: wrap; /* Allow flex items (containers) to wrap to new lines */
+    justify-content: center; /* Center the containers horizontally */
+    gap: 20px; /* Add space between the containers */
+}
+
+h1 {
+    font-size: 40px; /* Large font size for the heading */
+    text-align: center; /* Center the heading text */
+    margin: 80px 20px; /* Add vertical and horizontal margin */
+}
+
+.container {
+    display: flex; /* Flex container for child elements */
+    flex-direction: column; /* Stack child elements vertically */
+    align-items: center; /* Center child elements horizontally */
+    position: relative; /* Position for potential absolute positioning of children */
+    overflow: hidden; /* Hide overflow content */
+    background: linear-gradient(rgba(255, 166, 0, 0.546), rgba(227, 42, 190, 0.527)); /* Gradient background */
+    height: 300px; /* Set fixed height */
+    width: 90%; /* Responsive width as a percentage */
+    max-width: 190px; /* Limit maximum width to avoid stretching too wide */
+    transition: all 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.container:hover {
+    height: 400px; /* Increase height on hover */
+    overflow: visible; /* Show overflow content on hover */
+    background: linear-gradient(orange, rgb(227, 42, 190)); /* Change background gradient on hover */
+    transform: scale(1.1); /* Slightly scale up the container */
+    transition: 0.5s cubic-bezier(0.075, 0.82, 0.165, 1); /* Smooth transition with cubic-bezier curve */
+    cursor: pointer; /* Change cursor to pointer on hover */
+}
+
+.box {
+    height: 100%; /* Make box take full height of the container */
+    width: 100%; /* Make box take full width of the container */
+}
+
+.propic {
+    width: 100%; /* Full width for images */
+    overflow: hidden; /* Hide overflow to crop images */
+}
+
+img {
+    width: 100%; /* Make images responsive by using full width of the container */
+}
+
+.textbox {
+    padding: 10px; /* Add padding inside the textbox */
+    width: 100%; /* Full width of the container */
+    text-align: center; /* Center text inside the textbox */
+    margin-top: 5%; /* Add margin at the top */
+}
+
+.textbox p {
+    font-size: 12px; /* Small font size for paragraph text */
+}
+
+.textbox h1 {
+    font-size: 25px; /* Larger font size for names */
+}
+
+.textbox h4 {
+    font-size: 15px; /* Medium font size for job titles */
+}
+
+/* Media Queries for responsiveness */
+@media (max-width: 768px) {
+    .container {
+        width: 45%; /* Adjust width for tablets and smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        width: 90%; /* Full width for mobile devices */
+    }
+}
+
+</style>
+</head>
+<body>
+<h1>MEET OUR TEAM</h1>
+
+<section>
+<div class="container">
+<div class="box">
+<div class="propic">
+<img src="./one.jpg" alt="">
+</div>
+<div class="textbox">
+<h2>Katerina <br> Schulz</h2>
+<h4>CEO</h4> <br>
+<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eum totam ex consequuntur? Id cum earum, 
+magnam doloremque, 
+architecto.</p>
+</div>
+
+</div>
+</div>
+
+
+<div class="container">
+<div class="box">
+<div class="propic">
+<img src="./two.jpg" alt="">
+</div>
+<div class="textbox">
+<h2>Claire <br> Gomez</h2>
+<h4>Executive Assistant</h4> <br>
+<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eum totam ex consequuntur? Id cum earum, 
+magnam doloremque, 
+architecto.</p>
+</div>
+
+</div>
+</div>
+
+
+<div class="container">
+<div class="box">
+<div class="propic">
+<img src="./three.jpg" alt="">
+</div>
+<div class="textbox">
+<h2>Steve <br> James</h2>
+<h4>Product Manager</h4> <br>
+<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eum totam ex consequuntur? Id cum earum, 
+magnam doloremque, 
+architecto.</p>
+</div>
+
+</div>
+</div>
+
+
+<div class="container">
+<div class="box">
+<div class="propic">
+<img src="./four.jpg" alt="">
+</div>
+<div class="textbox">
+<h2>Sonia <br> White</h2>
+<h4>Operation Manager</h4> <br>
+<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eum totam ex consequuntur? Id cum earum, 
+magnam doloremque, 
+architecto.</p>
+</div>
+
+</div>
+</div>
+
+
+<div class="container">
+<div class="box">
+<div class="propic">
+<img src="./five.jpg" alt="">
+</div>
+<div class="textbox">
+<h2>Amanda <br> Pane</h2>
+<h4>Sales Rep</h4> <br>
+<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eum totam ex consequuntur? Id cum earum, 
+magnam doloremque, 
+architecto.</p>
+</div>
+
+</div>
+</div>
+
+
+<div class="container">
+<div class="box">
+<div class="propic">
+<img src="./six.jpg" alt="">
+</div>
+<div class="textbox">
+<h2>Brandon <br> Brown</h2>
+<h4>Marketing Specialist</h4> <br>
+<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eum totam ex consequuntur? Id cum earum, 
+magnam doloremque, 
+architecto.</p>
+</div>
+
+</div>
+</div>
+
+</section>
+</body>
+</html>
